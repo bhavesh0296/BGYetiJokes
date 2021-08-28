@@ -16,7 +16,33 @@
 		4033A87A26DA54EC00D79616 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4033A87826DA54EB00D79616 /* LaunchScreen.storyboard */; };
 		4033A87E26DA550C00D79616 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033A87C26DA550C00D79616 /* Joke.swift */; };
 		4033A87F26DA550C00D79616 /* JokeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033A87D26DA550C00D79616 /* JokeProvider.swift */; };
+		4033A88D26DA59EE00D79616 /* YetiTheme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4033A88B26DA597600D79616 /* YetiTheme.framework */; };
+		4033A88E26DA59EE00D79616 /* YetiTheme.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4033A88B26DA597600D79616 /* YetiTheme.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4033A88A26DA597600D79616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4033A88626DA597600D79616 /* YetiTheme.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C3B431F0205926D300B0CAC1;
+			remoteInfo = YetiTheme;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4033A88F26DA59EE00D79616 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4033A88E26DA59EE00D79616 /* YetiTheme.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4033A85826DA53DA00D79616 /* BGYetiJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BGYetiJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +56,7 @@
 		4033A87826DA54EB00D79616 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4033A87C26DA550C00D79616 /* Joke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		4033A87D26DA550C00D79616 /* JokeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeProvider.swift; sourceTree = "<group>"; };
+		4033A88626DA597600D79616 /* YetiTheme.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YetiTheme.xcodeproj; path = ../YetiTheme/YetiTheme.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4033A88D26DA59EE00D79616 /* YetiTheme.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,8 +74,10 @@
 		4033A84F26DA53DA00D79616 = {
 			isa = PBXGroup;
 			children = (
+				4033A88626DA597600D79616 /* YetiTheme.xcodeproj */,
 				4033A85A26DA53DA00D79616 /* BGYetiJokes */,
 				4033A85926DA53DA00D79616 /* Products */,
+				4033A88C26DA59EE00D79616 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +146,21 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4033A88726DA597600D79616 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4033A88B26DA597600D79616 /* YetiTheme.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4033A88C26DA59EE00D79616 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,6 +171,7 @@
 				4033A85426DA53DA00D79616 /* Sources */,
 				4033A85526DA53DA00D79616 /* Frameworks */,
 				4033A85626DA53DA00D79616 /* Resources */,
+				4033A88F26DA59EE00D79616 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,12 +208,28 @@
 			mainGroup = 4033A84F26DA53DA00D79616;
 			productRefGroup = 4033A85926DA53DA00D79616 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4033A88726DA597600D79616 /* Products */;
+					ProjectRef = 4033A88626DA597600D79616 /* YetiTheme.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4033A85726DA53DA00D79616 /* BGYetiJokes */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4033A88B26DA597600D79616 /* YetiTheme.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = YetiTheme.framework;
+			remoteRef = 4033A88A26DA597600D79616 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4033A85626DA53DA00D79616 /* Resources */ = {
