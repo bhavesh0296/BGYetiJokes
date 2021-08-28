@@ -1,2 +1,2 @@
 # BGYetiJokes
-joke-reading app that uses custom fonts and snowcases some great puns
+Joke-reading app that uses custom fonts and snowcases some great puns
