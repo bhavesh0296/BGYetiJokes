@@ -6,12 +6,12 @@ Joke-reading app that uses custom fonts and snowcases some great puns, It uses *
 
 # Digram Representation
 <kbd>
-<img src="Screenshots/diagram.png" alt="Digram" width="250" /> 
+<img src="Screenshot/diagram.png" alt="Digram" width="250" /> 
 </kbd>
 
 # App Preview
 <kbd>
-<img src="Screenshots/BGYetiJokes.gif" alt="App Preview" width="250" /> 
+<img src="Screenshot/BGYetiJokes.gif" alt="App Preview" width="250" /> 
 </kbd>
 
 # Joke JSON 
